@@ -1,0 +1,184 @@
+.lists{
+    position: relative;
+    border-left: 1px solid #cccccc;
+}
+@media screen and (min-width: 768px) {
+    .lists{
+        border-left: 1px solid #cccccc;
+        width: 100%;
+        min-height: calc( 100vh - 115px );
+        height: 100%;
+    }
+}
+.lists .chat-list, .lists .friend-list{
+    position: relative;
+    height: 50%;
+}
+.lists .chat-list{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-bottom: 1px solid #cccccc;
+}
+.lists .chat-list .chatbox{
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lists .chat-list .chatbox .img img{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.lists .chat-list .chatbox .text h6{
+    font-size: 1em;
+	font-family: 'Lato', sans-serif;
+	color: #212529;
+    font-weight: 400;
+}
+.lists .chat-list .chatbox .text p{
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    color: #212529;
+}
+.lists .chat-list .chatbox:hover{
+    background-color: #cccccc;
+}
+.lists .friend-list{
+    padding: 30px;
+}
+.lists .friend-list .friend{
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid #cccccc;
+    width: 80%;
+    padding: 12px 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lists .friend-list .friend:hover{
+    background-color: #cccccc;
+}    
+.lists .friend-list .friend img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.lists .friend-list .friend h6{
+    padding-top: 13px;
+    font-size: 1.1em;
+	font-family: 'Lato', sans-serif;
+	color: #212529;
+    font-weight: 500;
+}
+
+
+
+.chatlog{
+    position: relative;
+}
+.chatlog .header{
+    display: flex;
+    background-color: #454a4e;
+    color: #ffffff;
+    border-radius: 12px;
+    height: auto;
+    padding: 10px;
+}
+.chatlog .header .img img{
+    width: 100px;
+    border-radius: 10px;
+}
+.chatlog .header .text{
+    margin-left: 60px;
+}
+.chatlog .forms{
+    position: fixed;
+    bottom: 45px;
+    left: 370px;
+    width: 45%;
+}
+.chatlog .forms .send-msg{
+    position: relative;
+}
+.chatlog .forms .send-msg .form form{
+    display: flex;
+    width: 100%;
+}
+.chatlog .forms .send-msg .form form > div{
+    width: 85%;
+}
+.chatlog .forms .send-msg .form form input.form-control{
+    height: 50px;
+}
+.chatlog .forms .send-msg .form form button{
+    width: 15%;
+    height: 50px;
+}
+.chatlog .buttons{
+    position: relative;
+    margin-top: 10px;
+    margin-right: 3px;
+    text-align: center;
+}
+.chatlog .buttons button{
+    margin-right: 2px;
+}
+.chatlog .chat{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+.chatlog .chat .sender-msg{
+    position: relative;
+    text-align: right;
+    width: auto;
+    margin-top: 40px;
+}
+.chatlog .chat .sender-msg span{
+    padding: 8px;
+    background: #212529;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 8px;
+    color: #ffffff;
+}
+.chatlog .chat .sender-msg img.dp{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 0 5px 1px 4px;
+}
+.chatlog .chat .receiver-msg{
+    position: relative;
+    text-align: left;
+    width: auto;
+    margin-top: 40px;
+}
+.chatlog .chat .receiver-msg span{
+    padding: 8px;
+    background: #454a4e;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #ffffff;
+}
+.chatlog .chat .receiver-msg img.dp{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 0 5px 1px 4px;
+}
+.chatlog .chat .chat-image{
+    width: 120px;
+}

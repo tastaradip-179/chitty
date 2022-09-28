@@ -1,0 +1,189 @@
+.vertically-middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+.form-structure{
+    position: relative;
+	margin: 0 auto;
+    background: url('../images/community.jpg');
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #fff;
+	overflow: hidden;
+	opacity: 1;
+	visibility: visible;
+	box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .7);
+}
+
+
+.form-structure .top, .form-structure .bottom{
+	position: relative;
+}
+
+
+.form-structure .signin{
+	position: absolute;
+	visibility: hidden !important;
+	width: 100%;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, 5%);
+
+	& h3.signin-title{
+		color: #ffffff;
+		visibility: visible;
+		cursor: pointer;
+		font-family: 'Playfair Display', serif;
+		text-align: center;
+		font-size: 1.2em;
+		margin-top: 50px;
+	}
+
+	& h3.signin-title span{
+		font-size: 0.7em;
+		font-family: 'Lato', sans-serif;
+		margin-right: 5px;
+	}
+
+	&.reveal {
+		top: 5%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		z-index: 5;
+		visibility: visible !important;
+	}
+
+	&.reveal h3.signin-title{
+		visibility: hidden !important;
+	}
+
+	&.reveal h2.form-title{
+		font-family: 'Lato', sans-serif;
+		color: #fff;
+		font-size: 2em;
+		text-align: center;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	&.reveal form{
+		font-family: 'Playfair Display', serif;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+
+	&.reveal .signin-btn {
+		background-color: rgba(0,0,0,0.8);
+		color: #fff;
+		border:0;
+		border-radius: 15px;
+		display: block;
+		margin: 15px auto; 
+		padding: 10px;
+		width: 100%;
+		font-size: 15px;
+		font-weight: 600;
+		cursor: pointer;
+		opacity: 1;
+
+		&:hover {
+			background-color: #fff;
+			color: rgba(0,0,0,0.8);
+		}
+	}
+
+}
+
+.form-structure .signup{
+	position: absolute;
+    visibility: hidden;
+	width: 100%;
+
+	&.reveal {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		z-index: 5;
+		visibility: visible !important;
+		background: #fff;
+		border-top-left-radius: 40%;
+		width: 100%;
+		padding: 30px 0 10px 0;
+	}
+
+	&.reveal h3.signup-title{
+		visibility: hidden;
+	}
+
+	&.reveal h2.form-title{
+		font-family: 'Lato', sans-serif;
+		color: #111111;
+		font-size: 1.8em;
+		text-align: center;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+	&.reveal form{
+		font-family: 'Playfair Display', serif;
+		width: 70%;
+		margin: 0 auto;	
+	}
+
+
+	& h3.signup-title{
+		visibility: visible;
+		position: absolute;
+		width: 100%;
+		cursor: pointer;
+		font-family: 'Playfair Display', serif;
+		background: #fff;
+		bottom: -80%;
+		left: 50%;
+		transform: translate(-50%, 80%);
+		padding: 8px;
+		font-size: 1.2em;
+	}
+
+	& h3.signup-title span{
+		font-size: 0.7em;
+		font-family: 'Lato', sans-serif;
+		margin-right: 5px;
+	}
+
+	&.reveal .signup-btn {
+		background-color: rgba(0,0,0,0.8);
+		color: #fff;
+		border: 1px solid rgba(0,0,0,0.8);
+		border-radius: 15px;
+		display: block;
+		margin: 12px auto; 
+		padding: 10px;
+		width: 40%;
+		font-size: 15px;
+		font-weight: 600;
+		cursor: pointer;
+		opacity: 1;
+
+		&:hover {
+			background-color: #fff;
+			color: rgba(0,0,0,0.8);
+			border: 1px solid rgba(0,0,0,0.8);
+		}
+	}
+
+	
+
+}
+
+
+
+
+

@@ -1,0 +1,52 @@
+.profile .display-pic{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 8px #a9a6a6;
+}
+.profile .buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.profile .info{
+    margin-top: 92px;
+    margin-left: 44px;
+}
+.profile .info h1{
+    font-size: 3em;
+	font-family: 'Lato', sans-serif;
+	color: #212529;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.profile .info h4{
+    font-size: 1.2em;
+	font-family: 'Playfair Display', serif;
+	color: #7a7d7e;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.profile .info h6{
+    font-size: 1em;
+	color: #212529;
+    font-weight: 400;
+}
+.profile .friends{
+    position: relative;
+    width: 100%; 
+    margin-left: 18px; 
+}
+.profile .friends .friend{
+    display: inline-flex;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.profile .friends .friend img{
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+

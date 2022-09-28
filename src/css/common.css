@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+
+html, body{
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.body{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (min-width: 768px) {
+    .body .left{
+        width: 240px;
+    }
+    .body .right{
+        padding: 30px;
+        width: calc( 100% - 240px );
+    }
+}

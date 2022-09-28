@@ -1,0 +1,7 @@
+header - topbar
+
+body - sidenavbar, page content
+
+page - 1. import topbar
+		2. import sidenavbar
+		3. import page content
